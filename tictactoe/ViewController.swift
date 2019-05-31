@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     
     
     var player1:Bool = true
+    var draw:Bool = false
     
     
     @IBAction func turn(_ sender: UIButton) {
@@ -124,222 +125,39 @@ class ViewController: UIViewController {
         
         
         if label11.text == label12.text && label12.text == label13.text && label11.text != "" && label13.text != "" && label12.text != "" {
-            if player1{
-                
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 1 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-                
-                
             
-            }
-            else {
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 2 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
+            showAlert(player1, draw)
         }
        else if label11.text == label22.text && label22.text == label33.text && label11.text != "" && label22.text != "" && label33.text != "" {
-            if player1{
-                
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 1 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-                
-                
-                
-            }
-            else {
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 2 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
+            showAlert(player1, draw)
         }
         else if label13.text == label22.text && label22.text == label31.text && label13.text != "" && label22.text != "" && label31.text != "" {
-            if player1{
-                
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 1 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-                
-                
-                
-            }
-            else {
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 2 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
+            showAlert(player1, draw)
         }
         else if label21.text == label22.text && label22.text == label23.text && label21.text != "" && label22.text != "" && label23.text != ""{
-            if player1{
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 1 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
-            else {
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 2 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
+            showAlert(player1, draw)
         }
         else if label31.text == label32.text && label32.text == label33.text && label31.text != "" && label32.text != "" && label33.text != "" {
-            if player1{
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 1 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
-            else {
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 2 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
+            showAlert(player1, draw)
         }
         else if label11.text == label21.text && label21.text == label31.text && label11.text != "" && label21.text != "" && label31.text != "" {
-            if player1{
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 1 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
-            else {
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 2 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
+            showAlert(player1,draw)
         }
         else if label12.text == label22.text && label22.text == label32.text && label12.text != "" && label22.text != "" && label32.text != "" {
-            if player1{
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 1 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
-            else {
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 2 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
+            showAlert(player1,draw)
         }
         else if label13.text == label23.text && label23.text == label33.text && label13.text != "" && label23.text != "" && label33.text != "" {
-            if player1{
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 1 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
-            else {
-                
-                var alert = UIAlertController(title: "CONGRATULATIONS!!", message: "PLAYER 2 WINS", preferredStyle: .alert)
-                
-                var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                    action in
-                    self.newGame()
-                })
-                alert.addAction(action)
-                present(alert,animated: true, completion: nil)
-            }
+            showAlert(player1,draw)
             
         }
         
         
             
         else if label11.text != "" && label12.text != "" && label13.text != "" && label21.text != "" && label22.text != "" && label23.text != "" && label31.text != "" && label32.text != "" && label33.text != "" {
-            var alert = UIAlertController(title: "OOPS!", message: "IT'S A DRAW", preferredStyle: .alert)
             
-            var action = UIAlertAction(title:"New Game?", style: .default, handler: {
-                action in
-                self.newGame()
-            })
-            alert.addAction(action)
-            present(alert,animated: true, completion: nil)
+            draw = true
+            
+            showAlert(player1, draw)
             
         }
         
@@ -350,6 +168,8 @@ class ViewController: UIViewController {
         newGame()
     }
     func newGame() {
+        
+        draw = false
         
         label11.text = ""
         label12.text = ""
@@ -362,6 +182,37 @@ class ViewController: UIViewController {
         label33.text = ""
         player1 = true
         turnLabel.text = "Player 1's Turn"
+        
+    }
+    func showAlert(_ Play:Bool , _ draw:Bool) {
+        var mess = ""
+        var title = ""
+        if draw {
+            
+            mess = "It's a draw"
+            title = "OOPS!"
+        }
+        
+        else if Play {
+            mess = "Player 1 Wins"
+            title = "Congratulations!"
+        }
+        else if !Play {
+            mess = "Player 2 Wins"
+            title = "Congratulations!"
+        }
+        
+            
+        var alert = UIAlertController(title: title, message: mess, preferredStyle: .alert)
+        
+        var action = UIAlertAction(title:"New Game?", style: .default, handler: {
+            action in
+            self.newGame()
+        })
+        alert.addAction(action)
+        present(alert,animated: true, completion: nil)
+        
+        
         
     }
 
